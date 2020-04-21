@@ -1,0 +1,49 @@
+.button {
+	text-decoration: none;
+	color: #333;
+	font-family: Arial, sans-serif;
+	padding: 8px 16px;
+	display: inline-block;
+	background-color: #DDD;
+	transition: all 0.4s; //tất cả các thuộc tính
+}
+
+.button:hover {
+	color: #FFF;
+	background-color: #0db7e0;
+}
+
+.album-item {
+	width: 200px;
+	height: 200px;
+	background-color: #DDD;
+	background-image: url(https://picsum.photos/id/237/200/300);
+	background-size: cover;
+	background-position: center;
+	font-family: Arial, sans-serif;
+	color: #FFF;
+	font-size: 60px;
+}
+
+.album-item .overlay {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.album-items .overlay img{
+	transform: scale(0.5);
+	transition: all 0.3s;
+}
+
+.album-items .overlay img{
+	transform: scale(1);
+}
+
+.album-item:hover .overlay {
+	opacity: 1;
+}

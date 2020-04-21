@@ -1,0 +1,95 @@
+body {
+	background-color: #f5f5f5;
+	color: #313131;
+	font-family: Roboto, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.input-group {
+/*	background-color: tomato;*/
+	margin: 1.5rem 0;
+	position: relative;
+}
+
+form {
+	background-color: white;
+	padding: 5rem 1.5rem;
+	box-shadow: 0.5px 0.5px 12px rgba(0, 0, 0, 0.2);/*x y độ đổ bóng, mờ*/
+	border-radius: 1rem;
+}
+
+form h2 {
+	text-align: center;
+	font-weight: 400;
+	user-select: none;
+	text-shadow: 0.4px 0.4px 5px rgb(0, 0, 0, 0.2);
+}
+
+form input {
+	display: block;
+	margin: 8px auto;
+	border: none;
+	border-bottom: 1px solid dodgerblue;
+	outline: none;
+	padding: 8px 4px;
+}
+
+form label {
+	position: absolute;
+	left: 40px;
+	top: 4px;
+	font-weight: 400;
+	font-size: 14px;
+	pointer-events: none;
+	color: gray;
+	transition: 100ms ease;
+}
+
+input:focus + label, input:valid + label {
+	top: -14px;
+	left: -8px;
+	font-size: 14px;
+	color: dodgerblue;
+}
+
+
+form button {
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	background-color: dodgerblue;
+	padding: 0.5rem 1rem;
+	border: none;
+	color: white;
+	border-radius: 2rem;
+	width: 100%;
+	cursor: pointer;
+	transition: 200px;
+	box-shadow: 0.2px 0.2px 12px rgba(0, 0, 0, 0.3);
+}
+
+form p {
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 2rem;
+}
+
+form p a {
+	color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

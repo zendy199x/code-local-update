@@ -1,0 +1,27 @@
+h1 {
+  color: red;
+  width: 700px;
+  text-align: center;
+}
+
+.row-1 {
+  background-color: red;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+table {
+  width: 700px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table, td {
+  border: 1px solid blue;
+}
+
+table tr td:nth-last-child(2),
+table tr td:first-child[rowspan],
+table tr td:last-child:not(:first-child) {
+  text-align: center;
+}

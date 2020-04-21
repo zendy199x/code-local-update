@@ -1,0 +1,24 @@
+{
+  "name": "2-template-engines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4P    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "md5": "^2.2.1",
+    "pug": "^2.0.3",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

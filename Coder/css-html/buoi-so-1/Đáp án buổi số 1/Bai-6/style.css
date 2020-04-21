@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.border-1 {
+  border: 5px solid red;
+  padding: 5px;
+}
+
+.border-2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 3px solid blue;
+}
+
+/* .border-2 { //cách 2
+  padding: 10px;
+  box-shadow: 0 0 0 4px #dd470d, inset 0 0 0 2px #dd470d;
+  border: 2px solid #fff;
+  outline: 2px solid #36b3ea;
+} */
+
+p::first-letter {
+  font-size: 40px;
+  color: red;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: end;
+  background-color: tomato;
+  color: #fff;
+}
+
+font {
+  color: red;
+  font-weight: bold;
+}
+
+i {
+  background-color: yellow;
+}

@@ -1,0 +1,15 @@
+body {
+  background-color: #A06D21;
+  background-image: url("./image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  color: #FFCC00;
+}
+
+.main {
+  color: #FFF;
+}

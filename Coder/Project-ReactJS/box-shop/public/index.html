@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>BoxShop</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="%PUBLIC_URL%/Vendors/css/animate.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/Vendors/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/Vendors/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css">
+</head>
+
+<body>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="%PUBLIC_URL%/Vendors/js/owl.carousel.min.js"></script>
+    <script src='%PUBLIC_URL%/Vendors/js/jquery.barfiller.js'></script>
+    <script src="%PUBLIC_URL%/Vendors/js/isotope.pkgd.min.js"></script>
+    <script src="%PUBLIC_URL%/js/script.js"></script>
+
+
+    <script>
+        window.onwheel = function () {
+
+            //Accordion AboutPage
+            var acc = document.getElementsByClassName("accordion");
+            var def = document.getElementsByClassName("default");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+
+            $('.portfolio').isotope({
+                itemSelector: '.all',
+                layoutMode: 'fitRows'
+            });
+            $('ul li').click(function (event) {
+                let type = $(this).data('filter');
+                let loai = $(this).text();
+                type = '.' + type;
+                $('.portfolio').isotope({
+                    filter: type
+                })
+            });
+
+            $('.item-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                autoplay: true,
+                responsiveClass: true,
+                dots: false,
+                mouseDrag: false,
+                touchDrag: false,
+                pullDrag: false,
+                responsive: {
+                    992: {
+                        items: 4
+                    }
+                }
+            })
+
+            $('.brand-carousel').owlCarousel({
+                loop: true,
+                nav: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                dots: false,
+                responsive: {
+                    991: {
+                        items: 4
+                    },
+                    992: {
+                        items: 5
+                    }
+                }
+            })
+
+            $('.testi-carousel').owlCarousel({
+                loop: true,
+                animateOut: 'fadeOut',
+                animateIn: 'flipInX',
+                nav: false,
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+            })
+
+            $('.deal-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+            })
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 4
+                    }
+                }
+            })
+
+            //OurProduct HomePage
+            let ourClick = document.getElementsByClassName('our__click');
+
+            for (let item of ourClick) {
+                item.addEventListener('click', myFunction);
+            }
+
+            function myFunction() {
+                setTimeout(showloader, 1500);
+                document.getElementById('tab-content').style.display = 'none';
+                document.getElementById('preloader').style.display = 'block';
+            }
+
+            function showloader() {
+                document.getElementById('preloader').style.display = 'none';
+                document.getElementById('tab-content').style.display = 'block';
+            }
+
+            //Barfiller AboutPage
+            if (scrollY >= 900) {
+                $('#bar1').barfiller();
+                $('#bar2').barfiller();
+                $('#bar3').barfiller();
+                $('#bar4').barfiller();
+                $('#bar5').barfiller();
+            }
+        }
+    </script>
+    <script>
+        let barfiller = document.getElementsByClassName(".barfiller");
+
+        for (let bar of barfiller) {
+            $(this).barfiller({
+                // color of bar
+                barColor: '#16b597',
+
+                // shows a tooltip
+                tooltip: true,
+
+                // duration in ms
+                duration: 1000,
+
+                // re-animate on resize
+                animateOnResize: true,
+
+                // custom symbol
+                symbol: "%"
+            });
+        }
+    </script>
+    <script>
+        window.onscroll = function () {
+            let backTop = document.getElementById('back__top');
+
+            if (window.scrollY > 300) {
+                backTop.style.display = 'block';
+            } else {
+                backTop.style.display = 'none';
+            }
+
+            let handleScrollTop = () => {
+                if (window.scrollY > 0) {
+                    setTimeout(function () {
+                        window.scrollTo(0, window.scrollY - 5)
+                        handleScrollTop();
+                    }, 30)
+                }
+            }
+
+            backTop.addEventListener('click', handleScrollTop);
+        }
+    </script>
+</body>
+
+</html>

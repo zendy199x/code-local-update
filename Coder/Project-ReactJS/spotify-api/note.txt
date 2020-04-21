@@ -1,0 +1,10 @@
+breadcrumb
+[
+    {to, name}
+    {to, name}
+]
+
+Page        Breadcrumb
+Home        Home 
+Artist      Home (x) > Thu Minh
+Album       Home (x) > Thu Minh (x) -> Giác Quan Thứ, Vol. 6

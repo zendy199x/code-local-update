@@ -1,0 +1,79 @@
+/*
+  background-image: url(...)
+  background-repeat: repeat-x | repeat-y |
+    no-repeat | repeat* | ...
+  background-size: % | contain | cover | auto* | ...
+  background-position: x y | center
+  background-attachment: scroll* | fixed
+ */
+
+body {
+  background-color: #EEE;
+  font-family: sans-serif;
+}
+
+.list-item {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 16px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  background-color: #DDD;
+}
+
+.list-item-transparent {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,19,177,1) 29%, rgba(0,212,255,1) 100%);
+  color: #FFF;
+}
+
+.list-item-pattern {
+  background-image: url(../img/pattern.jpg);
+  background-size: 20%;
+  height: 100px;
+  color: white;
+  background-repeat: repeat;
+}
+
+.list-item-image {
+  background-image: url(../img/bg.jpg);
+  height: 100px;
+  color: white;
+  background-size: cover;
+  background-position: 0 -250px;
+}
+
+.list-item-parallax {
+  background-image: url(../img/bg.jpg);
+  height: 100px;
+  color: white;
+  background-size: cover;
+  background-position: -180px;
+  background-attachment: fixed;
+}
+
+/*.list-item-pattern {
+  background-image: url(./pattern.jpg);
+  background-size: 20%;
+  color: white;
+  height: 100px;
+}
+
+.list-item-image {
+  color: white;
+  height: 100px;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: 0 -220px;
+}
+
+.list-item-parallax {
+  color: white;
+  height: 100px;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+*/

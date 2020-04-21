@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  padding: 50px;
+  text-align: center;
+  background-color: #DDD;
+  border: 1px solid #888;
+  flex-grow: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+}

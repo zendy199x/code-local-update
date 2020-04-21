@@ -1,0 +1,49 @@
+body {
+	background-color: #EEE;
+	font-family: sans-serif;
+}
+
+.list-item {
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 20px;
+	margin-bottom: 8px;
+/*	border-style: solid;
+	border-color: #213921;*/
+	border-radius: 5px;
+	background-color: #DDD;
+}
+
+.list-item-transparent {
+	background-color: transparent;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	color: #FFF;
+}
+
+.list-item-pattern {
+	background-image: url(./pattern.jpg);
+	background-size: 90px;
+/*	background-repeat: no-repeat;*/
+	height: 100px;
+	color: white;
+/*	background-repeat: repeat-x;
+	background-repeat: repeat-y;*/
+}
+
+.list-item-image {
+	background-image: url(./image.png);
+	height: 100px;
+	color: white;
+	background-size: cover;
+	background-position: 0 -350px; //không muốn trục ngang dịch chuyển, chỉ muốn trục y lên trên
+}
+
+.list-item-parallax {
+	background-image: url(./image.png);
+	height: 100px;
+	color: green;
+	background-size: cover;
+	background-attachment: fixed;
+}

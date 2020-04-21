@@ -1,0 +1,49 @@
+body {
+  background-color: #FFEDCA;
+}
+
+.table-1 {
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.title {
+  margin-top: 0;
+  color: #CC6600;
+}
+
+.va-t {
+  vertical-align: top;
+}
+
+.table-2 {
+  width: 350px;
+  border-collapse: collapse; /*bỏ đi 2 border thành 1 border có giá trị là 1 border*/
+}
+
+.table-2 thead {
+  color: #fff;
+  background-color: #CC6600;
+}
+
+.table-2,
+.table-2 th,
+.table-2 td {
+  border: 1px solid #760e78;
+}
+
+/* .table-2 tr td:first-child {
+  text-align: center;
+} */
+
+table tr td:nth-child(1) {
+  text-align: center;
+}
+
+.table-2 tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.table-1 img {
+  max-width: 170px;
+}

@@ -1,0 +1,72 @@
+h1.page-title {
+	margin-bottom: 20px;
+}
+
+div.product {
+	border-bottom: 2px solid #eee;
+	padding: 2px 0px 12px 0px;
+}
+
+div.product:last-child {
+	border-bottom: 0px;
+}
+
+div.product div.media-left a img{
+	max-width: 120px;
+}
+
+div.product div.media-body{
+	position: relative;
+}
+
+div.product div.media-body p{
+	padding-right: 90px;
+}
+
+div.product div.media-body a.price,
+div.product div.media-body span.price{
+	position: absolute;
+	bottom: 5px;
+	right: 0px;
+	padding: 5px 10px;
+	background-color: #FF4000;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+div.product div.media-body input {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	max-width: 76px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table  input {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#my-cart-body input {
+	max-width: 50px;
+}
+
+div.product div.media-body span.price{
+	background-color: #BDBDBD;
+}
+
+div.product div.media-body a.price:hover{
+	text-decoration: none;
+	opacity: 1;
+}
+
+.total-price {
+	font-weight: bold;
+	color:#FF0000;
+	font-size: 16px;
+}

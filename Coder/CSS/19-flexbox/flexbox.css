@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	background-color: #DDD;
+	color: #FFF;
+}
+
+.child-1 {
+	background-color: red;
+	flex-basis: 150px;
+}
+
+.child-2 {
+	background-color: green;
+	flex-basis: 200px;
+	flex-grow: 1;
+	order: 1;
+}

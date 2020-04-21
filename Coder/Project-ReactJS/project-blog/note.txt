@@ -1,0 +1,7 @@
+
+/			Header Navigation HomePage	Footer
+/about		Header Navigation AboutPage Footer
+/blog		Header Navigation Slider NewsItem BlogItem Footer
+
+HomePage Slider NewsItem
+AboutPage NewsItem BlogItem

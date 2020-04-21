@@ -1,0 +1,94 @@
+body {
+	background-color: #f3f3f3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.switch {
+	-webkit-appearance: none; //khôi phục tình trạng nguyên gốc của 1 phần tử
+	appearance: none;
+	width: 100px;
+	height: 50px;
+	background-color: #c6c6c6;
+	border-radius: 40px;
+	border: 1px solid gray;
+	outline: none;
+	position: relative;
+	transition: 200ms;
+}
+
+.switch:checked {
+	background-color: mediumseagreen;
+	border: 1px solid mediumseagreen;
+}
+
+.switch:before {
+	content: '';
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 50%;
+	top: 0px;
+	bottom: 0px;
+	transition: 200ms;
+}
+
+.switch:checked:before {
+	left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

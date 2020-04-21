@@ -1,0 +1,47 @@
+.button {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #DDD;
+  transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.button:hover {
+  color: #FFF;
+  background-color: #8393c5;
+}
+
+.album-item {
+  width: 200px;
+  height: 200px;
+  background-image: url(https://picsum.photos/200/300);
+  background-size: cover;
+  background-position: center;
+}
+
+.album-item .overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.album-item .overlay img {
+  transform: scale(0.8);
+  transition: all 0.3s;
+}
+
+.album-item:hover .overlay {
+  opacity: 1;
+}
+
+.album-item:hover .overlay img {
+  transform: scale(1);
+}
+
+

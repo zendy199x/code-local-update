@@ -1,0 +1,16 @@
+div.container {
+  background-color: green; }
+  div.container div.child a {
+    color: red;
+    font-size: 32px;
+    font-weight: bold; }
+  div.container p {
+    color: blue;
+    border-bottom: solid 1px red; }
+  div.container p.content {
+    margin: 20px;
+    padding: 20px;
+    border-top: solid 3px red;
+    border-bottom: solid 3px green;
+    border-left: solid 3px pink;
+    border-right: solid 3px blue; }

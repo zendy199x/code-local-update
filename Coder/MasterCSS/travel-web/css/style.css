@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 15px;
+    color: #222
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    background-color: #ffc;
+}
+
+.logo {
+    float: left;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+.logo span {
+    color: #82B62D;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.logo strong {
+    font-size: 3em;
+    color: #000;
+}
+
+.mainTop {
+    float: right;
+}
+
+.contactTop {
+    line-height: 2.2em;
+    margin-top: 35px;
+}
+
+.contactTop ul {
+    text-align: right;
+}
+
+.contactTop ul li {
+    display: inline-block;
+    color: #999;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.navTop {
+    line-height: 2em;
+    padding: 17px 0;
+    overflow: hidden;
+}
+
+.navTop .socialTop {
+    float: right;
+    margin-left: 3em;
+}
+
+.navTop .socialTop li {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.navTop .socialTop li a{
+    padding: 2px 3px;
+    color: #000;
+}
+
+.navTop .socialTop li a:hover {
+    color: #82b62d;
+}
+
+.navTop nav {
+    display: block;
+    white-space: nowrap;
+    float: left;
+}
+
+.navTop nav li{
+    display: inline-block;
+    padding: 0 0.2em;
+}
+
+.navTop nav li a {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+.navTop nav li a:hover {
+    color: #82b62d;
+}
+
+.navTop nav li.active a {
+    color: #de4c1d;
+}
+
+.sectionMain {
+    padding: 3.5em 0;
+    background: #fff;
+}
+
+.sectionSlider {
+    background-color: #fff;
+    background-image: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: both;
+    height: 650px;
+}
+
+.slider {
+    padding: 3em;
+}
+
+.slider .sliderContent {
+    text-align: center;
+    color: #fff;
+}
+
+.slider .sliderContent h5 {
+    font-size: 1.5 em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.4 em;
+}
+
+.slider .sliderContent h2 {
+    font-size: 1.5em;
+
+}
+
+.slider .sliderContent p {
+    text-align: center;
+    color: #fff;
+}
+
+.slider .sliderContent a {
+    text-align: center;
+    color: #fff;
+}

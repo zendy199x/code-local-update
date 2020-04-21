@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Bootstrap</title>
+    <!-- Use Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/v4-shims.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation --> <!--Thẻ ở đầu trang web, luôn đứng đầu trang web-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top"> <!--navbar-expand-md: đường link ở phía bên phải, light: màu sáng, sticky-top: gắn ở trên đỉnh-->
+        <div class="container-fluid"> <!--Chiếm trọn chiều ngang-->
+            <a class="navbar-branch" href="#"> <!--Chứa ảnh đại diện thương hiệu-->
+                <img src="./images/logo.png" height="50"> <!--Chiều rộng nó tự chuyển động theo chiều cao của ảnh-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> <!--navbar-togler: thẻ lật rồi biến mất, collage: thẻ div hiện ra biến mất như kéo rèm,-->
+                <span class="navbar-toggler-icon"></span> <!--icon menu hiện ra ở góc màn hình-->
+            </button>
+            <div class="collapse navbar-collapge" id="navbarPesponsive"></div> <!--link với button qua id-->
+                <ul class="navbar-nav ml-auto"> <!--danh sách các đường link khi co trang vào và dãn ra-->
+                    <li class="nav-item"> <!--các list-->
+                        <a class="nav-link active" href="#">Home</a> <!--coi như tự động active vào đó-->
+                    </li>
+                    <li class="nav-item"> <!--các list-->
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item"> <!--các list-->
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item"> <!--các list-->
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item"> <!--các list-->
+                        <a class="nav-link" href="#">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Carousel--> <!--ảnh chạy đi chạy lại-->
+<div id="slides" class="carousel slide" data-ride="carousel"> <!--class carousel slide: sử dụng được băng chuyền của thằng bs dạng slide-->
+    <ul class="carousel-indicators"> <!--indicators vạch-->
+        <li data-target="#slides" data-slide-to="0" class="active"></li> <!--ảnh chạy từ 0 tới 3, cho mặc định lúc đầu hiển thị là ảnh 0-->
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>		
+        <li data-target="#slides" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner"> <!--mỗi cái ảnh là 1 cái item-->
+        <div class="carousel-item active">
+            <img src="./images/carousel0.png">
+            <div class="carousel-caption"> <!--Chú thích của cái carousel-->
+                <h1 class="display-2">Example</h1> <!--display-2 là kích thước chuẩn của BS, kích thước chạy từ 1 tới 4-->
+                <h3>Autolayout with Boostrap</h3>
+                <button type="button" class="btn btn-outline-light btn-lg"> <!--nút bấm có viền màu sáng, nền trong trong, btn-lg: nút to-->
+                    VIEW TUTORIALS
+                </button>
+                <button type="button" class="btn btn-primary btn-lg">Get started</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./images/carousel1.png">
+        </div>
+        <div class="carousel-item">
+            <img src="./images/carousel2.png">
+        </div>
+        <div class="carousel-item">
+            <img src="./images/carousel3.png">
+        </div>
+    </div>
+</div>
+
+<!--Jumbotron-->
+<div class="container-fluid">
+    <div class="jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero fugiat distinctio sed exercitationem ipsum est itaque. Placeat, tempore nesciunt? Est ducimus officia repudiandae asperiores blanditiis! Ullam neque autem sit reiciendis!</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="#">
+                <button type="button" class="btn btn-outline-secondary">
+                    Buy a host
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row welcome text-center"> <!--text-center chữ phân bố ra giữa-->
+        <div class="col-12">
+            <h1 class="display-4">Build your application</h1>
+        </div>
+        <!--Horizontal Rule: Đường kẻ nằm ngang-->
+        <hr>
+        <div class="col-12">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur sint adipisci unde suscipit, mollitia alias laboriosam cum perferendis, velit error harum rem consequatur nobis quam odio non molestiae nulla ullam.</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-vuejs"></i>
+            <h3>Vue</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-angular"></i>
+            <h3>Angular</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="cpl-md-12 col-lg-6">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo, voluptatum voluptas in, consectetur maxime minus numquam, alias est sed fugit maiores temporibus! Alias corrupti error nisi, sed asperiores consequatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione accusantium sunt commodi ea ab tempore, voluptatum quae cum excepturi mollitia molestiae odio dignissimos soluta, illo tempora id aliquam sit.</p>
+            <br>
+        </div>
+    </div>
+</div>
+            
+<!-- CDN Bootstrap. jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

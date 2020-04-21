@@ -1,0 +1,33 @@
+items       : [],
+isShowForm  : false,
+strSearch   : '',
+orderBy     : 'name',
+orderDir    : 'asc',
+itemSelected: null
+
+App
+	Title
+	Control	
+		Search
+		Sort
+			X
+				Y
+					Z
+		Add
+	Form
+	List
+		Item
+
+SORT -> CONTROL -> APP
+	-> handleSort 
+	-> CONTROL onClickSort={this.props.onClickSort} 
+	-> onClickSort={this.handleSort} 
+	-> APP handleSort 
+	-> orderBy, orderDir
+
+Redux
+
+store
+reducer
+action
+state

@@ -1,0 +1,37 @@
+.container {
+  border: 2px solid rgb(100, 100, 100); 
+  padding: 10px;
+  border-radius: 30px;
+  width: 220px;
+  margin-bottom: 10px;
+}
+.formula {
+  width: 200px;
+  font-size: 100%;
+  text-align: right;
+  margin: 0 5px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: black;
+  color: white;
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+}
+.display {
+  width: 200px;
+  font-size: 250%;
+  text-align: right;
+  margin: 5px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: black;
+  color: white;
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "buttons": [
+    {
+      "symbol": "C"
+    },
+    {
+      "symbol": "÷",
+      "operator": "/"
+    },
+    {
+      "symbol": "7",
+      "newLine": true
+    },
+    {
+      "symbol": "8"
+    },
+    {
+      "symbol": "9"
+    },
+    {
+      "symbol": "×",
+      "operator": "*"
+    },
+    {
+      "symbol": "4",
+      "newLine": true
+    },
+    {
+      "symbol": "5"
+    },
+    {
+      "symbol": "6"
+    },
+    {
+      "symbol": "-",
+      "operator": "-"
+    },
+    {
+      "symbol": "1",
+      "newLine": true
+    },
+    {
+      "symbol": "2"
+    },
+    {
+      "symbol": "3"
+    },
+    {
+      "symbol": "+",
+      "operator": "+"
+    },
+    {
+      "symbol": "0",
+      "newLine": true
+    },
+    {
+      "symbol": "."
+    },
+    {
+      "symbol": "="
+    }
+  ]
+}

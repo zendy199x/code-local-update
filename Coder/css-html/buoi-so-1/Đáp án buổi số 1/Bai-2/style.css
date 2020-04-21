@@ -1,0 +1,43 @@
+.header {
+  text-align: center;
+  color: #006600;
+}
+
+hr {
+  width: 250px;
+}
+
+.title {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+.title-1 {
+  font-weight: bold;
+}
+
+.title-2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF3399;
+  background-color: #FECFFD;
+  ;
+}
+
+.main {
+  background-color: #FFFFCC;
+  text-align: center;
+  font-style: italic;
+}
+
+#intro-1 {
+  color: blue
+}
+
+#intro-2 {
+  color: red;
+}
+
+#intro-3 {
+  color: green;
+}

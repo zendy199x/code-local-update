@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS Template</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="obj">
+        <p>{{ title }}</p>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#obj",
+            data: {
+                title: "Hello World"
+            }
+        });
+    </script>
+</body>
+</html>

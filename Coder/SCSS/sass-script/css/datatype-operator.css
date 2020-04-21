@@ -1,0 +1,30 @@
+/*$primary_color: red;
+$size: 32;
+$text_size: $size * 1px;
+$text_size_string: 32 + px;
+$text_size_number: $text_size/1px;
+
+h1 {
+	color: $primary_color;
+}
+
+p {
+	font: {
+		size: $text_size_string;
+	}
+}
+*/
+/*$background-url: "../images/";
+
+div.bg {
+	background-url: $background-url + "div-bg.png";
+}
+
+p.background{
+	background-url: $background-url + "p-bg.png";
+}
+*/
+h1, p {
+  background-color: #ff8000;
+  padding: 10px;
+  color: yellow; }

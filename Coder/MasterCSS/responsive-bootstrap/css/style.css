@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+.navbar {
+    background-color: rgba(82, 64, 120, 0.9) !important; /*important đè lên thuộc tính của BS*/
+}
+
+.navbar li a {
+    color: white !important;
+}
+
+.navbar li a:hover {
+    color: yellow !important;
+}
+
+.carousel-inner img {
+    width: 100%
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+}
+
+.carousel-caption h1 {
+    font-size: 400%;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px #000;
+}
+
+.carousel-caption h3 {
+    font-size: 200%;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.btn-primary {
+    background-color: rgb(82, 64, 120);
+    border: 1px solid white;
+}
+
+.btn-primary {
+    background-color: green;
+    border: 1px solid blue;
+}
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.welcome hr {
+    border-top: 2px solid rgb(62,44,100,0.6);
+    width: 95%;
+    margin-bottom: 2rem;
+}
+
+.fa-react {
+    color: #81D8F7;
+}
+
+.fa-vuejs {
+    color: rgb(177,43,55);
+}
+
+.fa-angular {
+    color: #D76537;
+}
+
+.fa-react, .fa-vuejs, .fa-angular {
+    font-size: 4em;
+    margin: 1rem;
+}
+
+/*Media Query*/
+@media (max-width: 992px) {
+    .carousel-caption {
+        top: 20%;
+    }
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+    .carousel-caption h3 {
+        font-size: 160%;
+    }
+    .carousel-caption .btn {
+        font-size: 120%
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 20%;
+    }
+    .carousel-caption h1 {
+        font-size: 220%;
+    }
+    .carousel-caption h3 {
+        font-size: 140%;
+        padding-bottom: 0.2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 120%;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 10%;
+    }
+    .carousel-caption h1 {
+        font-size: 150%;
+    }
+    .carousel-caption h3 {
+        font-size: 110%;
+        padding-bottom: 0.2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+}

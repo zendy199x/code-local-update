@@ -1,0 +1,17 @@
+.list-item {
+	color: blue;
+	font-weight: bold;
+/*	border-left-width: 10px;*/
+	padding: 10px;
+	margin-bottom: 8px;
+/*	border-top-width: 0; //1 bên
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 10px;*/
+	border-width: 1px;
+/*	border-width: 1px 1px 1px 1px;*/
+	border-style: solid;
+	border-color: #213921;
+/*	border: 1px solid #49C598;*/
+	border-radius: 5px;
+}

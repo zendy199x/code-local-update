@@ -1,0 +1,55 @@
+.table-1 img {
+  max-width: 170px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title {
+  align-items: center;
+}
+
+.va-t {
+  vertical-align: inherit;
+}
+
+.table-2 {
+  width: 500px;
+  align-items: center;
+}
+
+h1 {
+  color: hotpink;
+  align-items: center;
+}
+
+ol {
+  background-color: #ffecf6;
+}
+
+.table-2 tr th:nth-child(2) {
+  text-align: inherit;
+}
+
+.table-3 tr th:nth-child(2) {
+  text-align: inherit;
+}
+
+.table-2 tr th span {
+  background-color: hotpink;
+  color: #fff;
+}
+
+.table-3 tr th span {
+  background-color: hotpink;
+  color: #fff;
+}
+
+.table-2 tr td li {
+  list-style-type: square;
+}
+
+.table-3 tr td li {
+  list-style-type: circle;
+}

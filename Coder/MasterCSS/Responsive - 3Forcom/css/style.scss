@@ -1,0 +1,447 @@
+@import "variable";
+*{
+  padding: 0;
+  margin: 0;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+ul{
+  padding: 0;
+  li{
+    list-style-type: none;
+  }
+}
+
+
+
+.header-contact{
+  background: $color-main;
+}
+
+.contact-h{
+  @include flexCenter;
+  .mail-header, .phone-header{
+    @include latoBold;
+    @include mp0;
+    color: white;
+    font-size: 14px;
+  }
+  .icon-box{
+    @include flexCenter;
+    padding: 12px;
+    background: $color1;
+    color: white;
+  }
+}
+
+.header-logo{
+  width: 128px;
+  height: 128px;
+  position: relative;
+  transform: translateY(-15%);
+}
+
+.middleMenu{
+  .menuElement{
+    @include playFairBold;
+    font-size: 13px;
+    padding: 0 2rem;
+    text-decoration: none;
+    color: $color2;
+    @include transition;
+    &:hover{
+      color: $color-main;
+      @include transition;
+    }
+  }
+  .listMenu{
+    margin: 0;
+    @include flexCenter;
+    .p-r{
+      color: $color-main;
+    }
+  }
+}
+
+.logo-res-img{
+  display: none;
+}
+
+.header-search{
+  display: flex;
+
+  .input-search{
+    width: 180px;
+    font-size: 14px;
+    padding: 5px;
+    outline: none;
+    border: none;
+  }
+
+  .icon-search{
+    margin-right: 10px;
+    color: $colorText;
+    &:hover{
+      color: $color-main;
+      @include transition;
+    }
+  }
+}
+
+.border-input-other{
+  border: 1px solid $color4;
+}
+
+.icon-contact{
+  width: 14px;
+  height: 14px;
+}
+
+.form-receive1{
+  box-shadow: -8px 5px 23px 5px rgba(218,218,218,0.26);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.form-receive2{
+  box-shadow: 8px 8px 23px 5px rgba(218,218,218,0.26);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.wel-title{
+  @include flexColoumnCenter;
+  position: relative;
+  transform: translateY(-30%);
+
+  .title-main{
+    @include playFairBold;
+    font-size: 24px;
+    color: white;
+  }
+  .direct-title {
+    margin-bottom: 2rem;
+    .sub-title{
+      @include latoRegular;
+      @include mp0;
+      padding: 0 15px;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+      &:hover{
+        color: $color-main;
+      }
+    }
+  }
+  .right-arrow {
+    @include arrowRight;
+    margin-top: 2px;
+  }
+}
+
+.info-detail{
+  display: flex;
+  flex-direction: column;
+  .title-info{
+    font-size: 18px;
+    @include playFairBold;
+  }
+  .line{
+    width: 150px;
+    height: 2px;
+    background: gainsboro;
+    margin: 20px 0;
+  }
+}
+
+
+.sec-info{
+  background: $color3;
+  padding: 40px;
+}
+
+.info-block{
+  .icon-box-info{
+    @include flexCenter;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    >i{
+      color: $color-main;
+    }
+  }
+  .info-content {
+    .p-content{
+      @include latoRegular;
+      margin-bottom: 2rem;
+      font-size: 16px;
+      margin-left: 15px;
+      color: $colorText;
+    }
+  }
+}
+
+.sec-input {
+  padding: 40px;
+  background: white;
+  .title-input {
+    > h3 {
+      @include playFairBold;
+      font-size: 24px;
+      color: $color5;
+    }
+  }
+  .submit{
+    border: none;
+    outline: none;
+    background: $color-main;
+    color: white;
+    font-size: 14px;
+    padding: 12px 33px;
+    @include playFairBold;
+    letter-spacing: 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 92% 100%, 0 100%);
+    @include transition;
+    &:hover{
+      letter-spacing: 2px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    }
+  }
+}
+
+.active{
+  color: $color-main!important;
+}
+
+.line-symbol1{
+  width: 80px;
+  height: 1px;
+  background: $color5;
+}
+.line-symbol2{
+  width: 8px;
+  height: 8px;
+  background: $color5;
+  transform: rotate(45deg);
+}
+
+.line-symbol3{
+  width: 5px;
+  height: 5px;
+  background: $color7;
+  transform: rotate(45deg);
+  margin: 0 1rem;
+}
+
+.line-symbol4{
+  position: absolute;
+  top: -50%;
+  left: 25%;
+  width: 50px;
+  height: 50px;
+  background-color: $color8;
+  transform: rotate(45deg);
+  z-index: -5;
+}
+
+
+.border-input {
+  border: 1px solid $color4;
+  margin-bottom: 1.5rem;
+  .icon-input{
+    margin: 0 20px;
+    color: $color4;
+  }
+  .input-custom {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+  }
+}
+
+.sec-2block{
+  position: relative;
+  transform: translateY(-30%);
+  .title-2block{
+    @include latoBold;
+    font-size: 18px;
+    color: $colorText2;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .sub-title-2block{
+    @include latoRegular;
+    font-size: 16px;
+    color: $colorText;
+    max-width: 80%;
+  }
+}
+
+
+
+.img-block{
+  @include flexCenter;
+  width: 150px;
+  height: 150px;
+  border: 1px solid $color-main;
+  background: $color-main2;
+  &:hover img{
+    transform: scale(0.9,0.9);
+    @include transition;
+  }
+  img{
+    width: 50%;
+    height: 50%;
+    @include transition;
+  }
+}
+
+
+
+.bg-policy{
+  background: $color6;
+  padding: 20px;
+  .policy-item{
+    color: $color7;
+    @include latoRegular;
+    font-size: 14px;
+  }
+}
+
+.social-element{
+  margin: 0 5px;
+  >i{
+    color: $color7;
+    font-size: 30px;
+  }
+}
+
+.bg-footer{
+  background: $color-main;
+  padding: 20px;
+  .footer-txt{
+    text-align: center;
+    @include latoRegular;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+
+.flexRight{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flexContentStart{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexContentCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.flexAlignCenter{
+  display: flex;
+  align-items: center;
+}
+
+.flexAround{
+  @include flexAround;
+}
+
+.flexNormal{
+  @include flexNormal;
+}
+
+.flexCenter{
+  @include flexCenter;
+}
+
+.flexBetween{
+  @include flexBetween;
+}
+
+.flexColumnCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.space-null{
+  height: 2px;
+  margin: 20px 0;
+}
+
+.mlr150{
+  margin: 0 150px;
+}
+
+.mr3rem{
+  margin-right: 3rem;
+}
+
+.mlr5{
+  margin: 0 5px;
+}
+
+.w100{
+  width: 100%;
+}
+
+.w35{
+  width: 35%;
+}
+
+.w30{
+  width: 30%;
+}
+.w70{
+  width: 70%;
+}
+
+.w60{
+  width: 60%;
+}
+
+.w40{
+  width: 40%;
+}
+
+.w90{
+  width: 90%
+}
+.w10{
+  width: 10%;
+}
+
+.fs14px{
+  font-size: 14px;
+}
+
+.w80{
+  width: 80%;
+}
+
+.mr10{
+  margin-right: 10px;
+}
+
+.pAll30{
+  padding: 50px;
+}
+
+
+.p-r{
+  position: relative;
+}
+
+
+@import "responsive";

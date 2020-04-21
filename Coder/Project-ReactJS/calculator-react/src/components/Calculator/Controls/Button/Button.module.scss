@@ -1,0 +1,40 @@
+@mixin button($widthMultiplier, $color, $backgroundColor) {
+  //consts
+  $width: 50px;
+  $margin: 2.5px;
+
+  //sizing
+  height: 50px;
+  outline: 0;
+  border: 0px;
+  border-radius: 50px;
+  margin: $margin;
+  @if $widthMultiplier == 1 {
+    width: ($width);
+  }
+  @else {
+    width: ($width * $widthMultiplier + $margin * (($widthMultiplier - 1) *2));
+  }
+
+  //font
+  color: $color;
+  font-size: 200%;
+
+  //background
+  background: $backgroundColor;
+  &:hover {
+    background: lighten($backgroundColor, 25%);
+  }
+}
+.defaultButton {
+  @include button(1, white, rgb(100, 100, 100));
+}
+.clearButton {
+  @include button(3, black, rgb(200, 200, 200));
+}
+.zeroButton {
+  @include button(2, white, rgb(100, 100, 100));
+}
+.operatorButton {
+  @include button(1, white, rgb(255, 125, 0));
+}

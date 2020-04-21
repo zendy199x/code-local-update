@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 4,
+      "name": "iphone 10",
+      "price": "1512",
+      "status": true
+    },
+    {
+      "name": "iphone 6",
+      "price": "1234",
+      "status": "",
+      "id": 5
+    },
+    {
+      "name": "iphone SE 123",
+      "price": "1200",
+      "status": "",
+      "id": 6
+    },
+    {
+      "name": "iphone XC",
+      "price": "1234",
+      "status": "",
+      "id": 7
+    },
+    {
+      "name": "Samsung S7 Plus",
+      "price": "1200",
+      "status": true,
+      "id": 8
+    },
+    {
+      "name": "nokia 0110",
+      "price": "1230",
+      "status": "",
+      "id": 9
+    },
+    {
+      "name": "iphone X",
+      "price": "123",
+      "status": "",
+      "id": 10
+    },
+    {
+      "name": "iphone XC",
+      "price": "12",
+      "status": "",
+      "id": 11
+    }
+  ]
+}

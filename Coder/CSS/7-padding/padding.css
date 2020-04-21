@@ -1,0 +1,10 @@
+.list-item {
+	color: red;
+	font-size: 19px;
+	font-weight: bold;
+/*	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+	padding-top: 16px;*/
+	padding: 10px 12px 14px 16px;
+}

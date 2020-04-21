@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputForm should render as expected 1`] = `
+<div>
+  <TextField
+    id="field_A"
+    onChange={[Function]}
+    required={false}
+    select={false}
+    value=""
+  />
+  <WithStyles(Button)
+    color="primary"
+    onClick={[Function]}
+  >
+    Button A
+  </WithStyles(Button)>
+  <TextField
+    id="field_B"
+    onChange={[Function]}
+    required={false}
+    select={false}
+    value=""
+  />
+  <WithStyles(Button)
+    color="secondary"
+    onClick={[Function]}
+  >
+    Button B
+  </WithStyles(Button)>
+  <TextField
+    id="field_C"
+    onChange={[Function]}
+    required={false}
+    select={false}
+    value=""
+  />
+  <WithStyles(Button)
+    color="default"
+    onClick={[Function]}
+  >
+    Button C
+  </WithStyles(Button)>
+</div>
+`;

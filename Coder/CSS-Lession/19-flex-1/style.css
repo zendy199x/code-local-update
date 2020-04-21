@@ -1,0 +1,37 @@
+/*
+display: flex
+flex-direction
+justify-content
+align-items
+flex-basis
+flex-grow
+flex-shrink
+
+order: 0* | <number>
+ */
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  background-color: #DDD;
+  color: #FFF;
+  flex-direction: row;
+}
+
+.child-1 {
+  background-color: red;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.child-2 {
+  background-color: green;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.container-swap .child-1 {
+  order: 1;
+}

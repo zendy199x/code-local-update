@@ -1,0 +1,87 @@
+div.row {
+	margin-bottom: 20px;
+}
+
+div.btn-group {
+	margin-bottom: 20px;
+}
+
+p.result {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #EBD7D3;
+}
+
+p.blue {
+	background-color: #20AFF1;
+	color: #21211A;
+}
+
+p.black {
+	background-color: #090909;
+	color: #F0F353;
+}
+
+p.white {
+	background-color: #fff;
+	color: #F21F09;
+}
+
+div.media img {
+	max-height: 100px;
+}
+
+.thumbnail {
+	text-align: justify;
+    padding: 0px !important;
+}
+
+.thumbnail .caption h3{
+	text-align: left;
+ 
+}
+
+.thumbnail img{
+   width: 100%;
+}
+
+.thumbnail a{
+    text-decoration: none;
+    margin: 5px 0px;
+}
+
+a.link {
+	padding: 8px 10px;
+	background-color: #fff;
+	margin: 10px;
+	border: 1px solid #B1E3F0;
+}
+
+a.active {
+	background-color: #F7F9D2;
+}
+	
+img.img-thumbnail {
+	max-width: 100% !important;
+}
+
+.list-albums {
+	max-height: 600px;
+	overflow-y: scroll;
+}
+
+
+.list-albums div.thumbnail{
+	min-height: 210px;
+	
+}
+
+div.track {
+	background-color: #E9F9F5;
+	margin-bottom: 20px;
+	
+}
+
+span.label.label-warning {
+    display: inline-block;
+}

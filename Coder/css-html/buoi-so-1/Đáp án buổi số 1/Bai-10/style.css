@@ -1,0 +1,45 @@
+table{
+  border-collapse: collapse;
+  width: 600px;
+}
+table, td{
+  border: 1px solid red;
+}
+img{
+  width: 50px;
+}
+table tr td{
+  width: 300px;
+}
+table tr td:last-child[rowspan]{
+  width: 80px;
+}
+table tr td:first-child[colspan]:not(:last-child){
+  color: #fff;
+  background-color:#FF0000;
+  font-weight: bold;
+  text-align: right;
+}
+table tr:nth-last-child(2){
+  background-color: #FFBBBB;
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+ul li{
+  list-style-type: none;
+  color: #FF0000;
+  margin-bottom: 10px;
+}
+ul ul li{
+  list-style-type: disc;
+  color: dimgray;
+}
+table td:last-child ul ul li{
+  list-style-type: decimal;
+}
+ul:first-child{
+  margin: 0px;
+  padding: 0px;
+}

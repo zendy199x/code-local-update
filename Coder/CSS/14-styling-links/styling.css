@@ -1,0 +1,34 @@
+/*
+States:
+	a:link; // trạng thái link chưa đc click bao giờ cả
+	a:visited; //đã được click
+	a:hover; //trỏ chuột
+	a:active; //trỏ chuột lên click vào nhưng chưa thả tay ra
+*/
+.defaut-link {
+	color: green;
+}
+.defaut-link:link {
+	color: green;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+.defaut-link:visited {
+}
+
+.defaut-link:hover {
+	text-decoration: underline;
+}
+
+.defaut-link:active {
+	color: red;
+}
+
+.button-links {
+	background: #AAA;
+	text-decoration: none;
+	color: green;
+	font-family: Arial, sans-serif;
+	padding: 10px, 20px;
+}

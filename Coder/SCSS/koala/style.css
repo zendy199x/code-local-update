@@ -1,0 +1,17 @@
+div.container {
+  width: 1200px;
+  height: 500px; }
+  div.container div.children {
+    width: 768px;
+    height: 250px; }
+    div.container div.children p {
+      padding: 10px;
+      background-color: blue; }
+      div.container div.children p a {
+        color: red;
+        text-decoration: underline;
+        font-size: 32px; }
+  div.container p {
+    color: red;
+    text-decoration: underline;
+    font-size: 32px; }

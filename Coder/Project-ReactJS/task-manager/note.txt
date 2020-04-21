@@ -1,0 +1,43 @@
+====================================
+Sử dụng gì?
+
+ReactJS
+React Router
+Redux
+Bootstrap
+Firebase (*)
+Notify (React Notify)
+
+====================================
+Chức năng?
+
+Login
+  + Email Pass -> Firebase
+  + Success: Firebase send userinfo -> Save Redux
+  + Error: Show Form Login
+Logout
+  + Remove userinfo redux
+Register (Signup)
+  + User Info: Email Pass Web
+  + Authentication (Firebase)
+  + Database
+Task
+  - TaskDoing
+    + List
+    + Add Task
+    + Completed Task
+  - TaskCompleted
+    + List
+    + Delete
+    + Clear All
+Permission
+Notify ?
+
+Tích hợp giao diện
+
+
+Phân chia Component
+
+Notify      get notify
+FormAddTask   set notify
+TaskDoingItem set notify

@@ -1,0 +1,22 @@
+div.container {
+	width: 1200px;
+	height: 500px;
+	div.children{
+		width: 768px;
+		height: 250px;
+		p{
+			padding: 10px;
+			background-color: blue;
+			a{
+				color: red;
+				text-decoration: underline;
+				font-size: 32px;
+			}
+		}
+	}
+	p{
+		color: red;
+				text-decoration: underline;
+				font-size: 32px;
+	}
+}

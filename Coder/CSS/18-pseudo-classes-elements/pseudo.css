@@ -1,0 +1,36 @@
+/*a:link {
+	color: red; //link được click hiện sang màu đỏ
+}
+
+a:visited {
+	color: green; //link đã được click
+}
+
+a:hover {
+	color: black; // trỏ chuột
+}
+
+a:active {
+	color: blue; //giữ chuột
+}
+
+a {
+	text-decoration: none; //bỏ gạch chân
+}*/
+/*
+a.highlight:hover {
+	color: red; //trỏ chuột qua nhấn giữ sẽ đổi màu
+}*/
+
+/*div:hover {
+	background-color: black;
+}*/
+p {
+	display: none;
+	background-color: yellow;
+	padding: 50px;
+}
+
+div.hover p {
+	display: block;
+}

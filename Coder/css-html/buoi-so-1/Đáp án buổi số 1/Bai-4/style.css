@@ -1,0 +1,21 @@
+body {
+  background-image: url(/abstract-pattern.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+h2 {
+  color: #008888;
+  text-align: center;
+}
+
+.main-1 {
+  background: #339999;
+  color: #fff;
+  font-style: italic;
+}
+
+.main-2 {
+  color: #339999;
+}

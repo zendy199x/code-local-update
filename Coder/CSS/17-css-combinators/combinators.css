@@ -1,0 +1,32 @@
+/*.list-1 > .item { //chỉ dùng con item
+	color: red;
+	border: 1px solid green;
+}*/
+
+/*.list-1 .item-2 + .item { 
+	border: 1px solid #333; //trong list 1, tìm item 2 và slack hàng tiếp theo của item 2 là item 3s
+}*/
+/*
+.list-1 .item-2 ~ .item { 
+	border: 1px solid #333; //trong list 1, tìm item 2 và slack hàng tiếp theo của item 2 là item 3s
+}*/
+/*
+.list-1 .item {
+	color: red;
+}*/
+
+/*.list-1 .item-2 {
+	color: green;
+}*/
+/*
+.list-1 > .item {
+	color: blue;
+}*/
+
+/*.list-1 .item-1 + .item { //item 2
+	border: 1px solid #444;
+}*/
+
+.list-1 .item-1 ~ .item {
+	border: 2px dashed red;
+}

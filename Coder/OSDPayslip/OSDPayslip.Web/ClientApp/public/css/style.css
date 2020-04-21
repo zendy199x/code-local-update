@@ -1,0 +1,151 @@
+
+.title{
+     font-size: 36px;
+     color: black;
+     font: bold;
+     text-align: center;
+     padding-bottom: 100px;
+    
+}
+.table-name{                                 
+     width: 83.7vw;
+     height: 120px; 
+     font-size: 24px;
+     line-height: 80px;
+     text-align: center;
+     background-color: #fafafa;
+     border: solid 1px lightgray;
+     margin-bottom: 100px;
+     margin-left: 70px
+   }
+table td {
+     font-size: 14px
+}
+.find{
+     float: right;
+     margin-right: 90px;
+     width: 230px;
+
+}
+.send{
+     float: left;
+     width: 230px;
+     margin-left: 70px;
+}
+.list{
+     text-align: center;
+}
+body {
+    padding: 50px;
+    font-family: "Sarabun", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+h1, h2, strong {
+    font-weight: 700;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 16px;
+    margin: 0;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 30px;
+}
+table td {
+    vertical-align: middle;
+    padding: 5px 15px;
+}
+.table {
+    border-right: 0.5px solid black;
+}
+.table thead td {
+    border-left: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}
+.table thead td:last-of-type {
+    border-right: 0.5px solid black;
+}
+.table tbody td {
+    border-bottom: 0.5px solid black;
+    border-left: 0.5px solid black;
+}
+.table thead tr td{
+    font-weight: bold;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.header td{
+    width: 50%;
+}
+
+
+.title {
+    margin-bottom: 30px;
+}
+
+
+.employee-info thead tr{
+    background-color: #f7d59f;
+}
+
+
+.timesheet-info thead tr{
+    background-color: #f2ac7c;
+}
+.timesheet-info tbody tr td {
+    width: 25%;
+}
+
+
+.calculate-salary {
+    margin-bottom: 0;
+}
+.calculate-salary thead tr {
+    background-color: #f77e5e;
+}
+.calculate-salary tr td {
+    width: 25%;
+}
+.net-income h2 {
+    font-size: 20px;
+}
+
+
+.notes {
+    margin-top: 40px;
+}
+.notes ul {
+    list-style:none;
+    padding: 0;
+}
+.notes ul li {
+    margin-bottom: 5px;
+    padding: 0 0 0 15px;
+    position: relative;
+}
+.notes ul li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+.notes h3 {
+    font-size: 16px;
+    margin-top: 30px;
+}
+.notes hr {
+    border-style: dotted;
+    margin: 30px 0;
+    border-bottom: none;
+}

@@ -1,0 +1,27 @@
+div.container{
+	background-color: green;
+	div.child{
+		a{
+			color: red;
+			font-size: 32px;
+			font-weight: bold;
+		}
+	}
+	p{
+		color: blue;
+		border-bottom: solid 1px red;
+	}
+	p.content{
+		margin: 20px;
+		padding: 20px;
+
+		border: {
+			top: solid 3px red;
+			bottom: solid 3px green;
+			left: solid 3px pink;
+			right: solid 3px blue;
+		}
+	}
+}
+
+

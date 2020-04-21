@@ -1,0 +1,8 @@
+/* inline vs. block */
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}

@@ -1,0 +1,35 @@
+h1.page-title {
+	margin-bottom: 20px;
+}
+
+td span.label {
+	cursor: pointer;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	vertical-align: middle !important;
+}
+
+.panel-body img {
+	width: 100%;
+}
+
+li.list-group-item {
+	position: relative;
+}
+
+li.list-group-item button {
+	position: absolute;
+	top: 25px;
+	right: 10px;
+}
+li.list-group-item p.task {
+	color: #2E64FE;
+	margin-bottom: 2px !important;
+}
+
+li.list-group-item span.author{
+	font-size: 13px;
+	font-style: italic;
+	color: #585858;
+}

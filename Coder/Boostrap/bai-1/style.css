@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	width:  1000px;
+	height: 500px;
+	text-align: center;
+	padding-top: 300px;
+	background-color: grey;
+	margin: auto;
+}
+
+.btn-1{
+	background-color: red;
+	color: white;
+	margin-bottom: 50px;
+}
+
+.btn-demo{
+	font-family: sans-serif;
+}

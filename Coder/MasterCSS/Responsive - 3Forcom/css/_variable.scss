@@ -1,0 +1,82 @@
+$color-main: #7bc1b3;
+$color-main2: rgba(123, 193, 179, 0.102);
+$color1: #66a99b;
+$color6: #68b4a5;
+$color2: #d2a579;
+$color3: #ecf5fd;
+$color4: #acb5c8;
+$color5: #cc9966;
+$color8: #f2f9f7;
+$colorText: #666666;
+$colorText2: #2a373f;
+$color7: #cbe3de;
+
+@mixin latoRegular{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+@mixin transition{
+  transition: 0.3s ease-in-out;
+}
+
+@mixin flexNormal{
+  display: flex;
+}
+
+@mixin flexAround{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin arrowRight{
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white;
+}
+
+@mixin latoBold{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+@mixin playFairBold{
+  font-weight: 700;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+@mixin  mp0{
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexColoumnCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexBetween{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin fullImage{
+  width: 100%;
+  height: auto;
+}
+
+@mixin non-btn{
+  border: none;
+  outline: none;
+}
